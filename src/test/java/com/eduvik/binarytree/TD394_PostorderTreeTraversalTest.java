@@ -7,20 +7,20 @@ import org.junit.Before;
 import org.junit.Test;
 import com.eduvik.ds.pojo.TreeNode;
 
-public class TD392_InOrderTraversalTest {
+public class TD394_PostorderTreeTraversalTest {
 
-  private TD392_InOrderTraversal object;
+  private TD394_PostorderTreeTraversal object;
 
   @Before
   public void init() {
-    object = new TD392_InOrderTraversal();
+    object = new TD394_PostorderTreeTraversal();
   }
 
   @Test
-  public void findInorderTraversal1() {
-    List<Integer> answer = Arrays.asList(4, 2, 1, 7, 5, 8, 3, 6);
+  public void findPostorderTraversal1() {
+    List<Integer> answer = Arrays.asList(4, 2, 7, 8, 5, 6, 3, 1);
     TreeNode root = getTree1();
-    List<Integer> result = object.findInorderTraversal(root);
+    List<Integer> result = object.findPostorderTraversal(root);
     assertEquals(answer, result);
   }
 
